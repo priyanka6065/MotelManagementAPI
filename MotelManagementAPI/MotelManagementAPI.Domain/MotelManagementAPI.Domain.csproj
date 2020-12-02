@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\MotelManagementContext.cs" />
+    <Compile Remove="Entities\Role.cs" />
+    <Compile Remove="Entities\RoleClaims.cs" />
+    <Compile Remove="Entities\User.cs" />
+    <Compile Remove="Entities\UserClaims.cs" />
+    <Compile Remove="Entities\UserLogins.cs" />
+    <Compile Remove="Entities\UserRoles.cs" />
+    <Compile Remove="Entities\UserTokens.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
